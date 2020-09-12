@@ -14,27 +14,24 @@
 <body>
     <div id="div1">
 
-        <p id="test">This is div 1 with onclick</p>
+        <p id="test1">This is div 1 with onclick</p>
         
-    </div>
+    </div><br><br><br>
     <div id="div2">
 
-        <p id="test">This is div 2 with mouseover</p>
+        <p id="test2">This is div 2 with mouseover</p>
         
-    </div>
-    <div id="div3">
-
-        <p id="test">This is div 3 with keypress</p>
-        
-    </div>
+    </div><br><br><br>
   
 </body>
 <!--   <script src="js/scripts.js"></script>  -->
 <script>
+    
+    document.getElementById("div1").addEventListener("click", function(){document.getElementById("test1").innerHTML = "You have clicked here";})
+    
+    document.getElementById("div2").addEventListener("mouseover", function(){document.getElementById("test2").innerHTML = "You have mouseovered here";})
 
-    document.getElementById("div1").addEventListener("click", function(){alert("This is onclick event",false);})
-    document.getElementById("div2").addEventListener("mouseover", function(){alert("This is mouseover event",false);})
-    document.getElementById("div3").addEventListener("keydown", function(){alert("This is keypress event",false);})
+   // document.getElementById("div2").addEventListener("mouseover", function(){alert("This is mouseover event");})
 
 
 </script>
