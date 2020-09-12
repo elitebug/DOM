@@ -1,2 +1,3 @@
 # DOM
-Learning DOM Manipulation
+Learning jquery
+
