@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body, section, div {
+  height: 100vh;
+}
+#container {
+  display: grid;
+}
+ 
+#left-half {
+  background: red;
+  grid-column: 1;
+}
+#right-half {
+  background: green;
+  grid-column: 2;
+}
+    </style>
+</head>
+<body>
+    <section id ="container">
+        <div id ="left-half">
+          <article>
+            <h1 id ="left">Left Half</h1>
+            <p>left</p>
+          </article>
+        </div>
+        <div id ="right-half">
+          <article>
+            <h1 id="right">Right Half</h1>
+            <p>Right.</p>
+          </article>
+        </div>
+      </section>
+</body>
+<script>
+
+document.getElementById("left-half").addEventListener("mouseover", function(){document.getElementById("left-half").style.backgroundColor = "green";})
+
+document.getElementById("left-half").addEventListener("mouseout", function(){document.getElementById("left-half").style.backgroundColor = "red";})
+
+document.getElementById("right-half").addEventListener("mouseover", function(){document.getElementById("right-half").style.backgroundColor = "yellow";})
+
+document.getElementById("right-half").addEventListener("mouseout", function(){document.getElementById("right-half").style.backgroundColor = "blue";})
+
+
+//document.body.style.backgroundColor = "red";
+
+
+
+</script>
+</html>
