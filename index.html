@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+
+ <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+</head>
+
+<body>
+    <div id="div1">
+
+        <p id="test">This is div 1 with onclick</p>
+        
+    </div>
+    <div id="div2">
+
+        <p id="test">This is div 2 with mouseover</p>
+        
+    </div>
+    <div id="div3">
+
+        <p id="test">This is div 3 with keypress</p>
+        
+    </div>
+  
+</body>
+<!--   <script src="js/scripts.js"></script>  -->
+<script>
+
+    document.getElementById("div1").addEventListener("click", function(){alert("This is onclick event",false);})
+    document.getElementById("div2").addEventListener("mouseover", function(){alert("This is mouseover event",false);})
+    document.getElementById("div3").addEventListener("keydown", function(){alert("This is keypress event",false);})
+
+
+</script>
+
+</html>
